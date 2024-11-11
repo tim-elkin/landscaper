@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Ubuntu:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.page {
+    background-color: #112925;
+    width: 100%;
+
+}
+
+
+
+.gradient {
+    width: 100%;
+    background-color: black;
+    background-image: linear-gradient(to bottom, #B0CCF7, #3c6cd3, #112925);
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+
+}
+
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navli {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 90px;
+}
+
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+a {
+    color: #112925;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 500;
+    color: #112925;
+}
+
+li {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.uplogo {
+    width: 80px;
+    margin-right: 200px;
+
+}
+
+
+
+footer {
+    background-color: #091614;
+    width: 100%;
+    height: 100px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+}
+
+.footercol {
+    color: #B0CCF7;
+    list-style: none;
+    display: flex;
+}
+
+.kontakts {
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+
+.about {
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+
+.staff {
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.footitem {
+    margin-top: 10px;
+}
+
+
+
+.services {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ourserv {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #112925;
+}
+
+.cards {
+    margin-top: 100px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    margin-bottom: 5%;
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.cardimg {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cardimg:hover {
+    opacity: 0.7;
+}
+
+
+button {
+    padding: 0%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-right: 5%;
+}
+
+
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    animation: modalFadeIn 0.4s ease;
+}
+
+.modal-content {
+    background-color: #fefefea3;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px; 
+    width: 40%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    animation: modalFadeIn 0.4s ease; 
+}
+
+.close {
+    color: #112925;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #ff6347; 
+}
+
+.info {
+    font-size: 18px;
+    margin-bottom: 1%;
+    color: #112925;
+    text-align: center; 
+    line-height: 1.6;
+}
+
+.info {
+    font-size: larger;
+    margin-bottom: 1%;
+    color: #112925;
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #112925;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0a6f50;
+}
+
